@@ -2,9 +2,10 @@ require_relative 'Rolodex.rb'
 require_relative 'Contact.rb'
 require 'sinatra'
 
-@@rolodex = Rolodex.new
+
 
 get "/" do
+	@@rolodex = Rolodex.new
 	@crm_app = "My CRM" 
 	erb :index
 end
@@ -18,6 +19,7 @@ end
 # end
 
 get "/contacts" do
+	@@contact_array = []
 	erb :contacts
 end
 
