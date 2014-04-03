@@ -1,6 +1,30 @@
-<h1>Welcome to your Customer Relationship Management App!</h1>
-<h2>What would you like to do?</h2>
 
+
+<div class="title"> 
+<h1>Welcome to your Army Management App</h1>
+<h2>What would you like to do?</h2>
+</div>
 <form method="get" action="/contacts/new">
-<button type="Submit">Add a contact!</button>
+<button type="Submit">Add a minion!</button>
 </form>
+
+<form method="post" action="/contacts/id/edit">
+
+<button type="Submit">Edit a minion! id# </button>
+<input type="text" name="id">
+</form>
+
+
+<form method="get" action="/contacts">
+<button type="Submit">View all minions!</button>
+</form>
+
+<!-- 
+find contact by ID?
+<form method="get" action="/contacts/new">
+<button type="Submit">Exit?</button>
+</form> -->
+
+<!-- <form method="get" action="/contacts/new">
+<button type="Submit">Exit?</button>
+</form> -->

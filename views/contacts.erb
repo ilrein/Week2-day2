@@ -1,8 +1,53 @@
-<h1>All Contacts</h1>
-
+<div class="title">
+	<h1>List of All Minions: </h1>
+</div>
 <ul>
-<% @@rolodex.show_all_contacts.each do |contact| %>
-  <li><%= contact.first_name %> <%= contact.last_name %>
-  <%= contact.email %><%= contact.note %><%= contact.id %></li>
-<% end %>
-</ul>
+	<div class="min_font"> 
+
+		<table style="width: 10px" border="1"> <% @@rolodex.show_all_contacts.each do |contact| %>
+			<tr><td>Class: </td>
+				<td>
+					<%= contact.first_name %> 
+					<td>
+						<form method="get" action="/contacts/<%=contact.id%>/edit">
+							<button type="Submit">Edit this minion!</button>
+						</form>
+					</td>
+				</td>
+			</tr><tr>
+			<td>Race: </td>
+			<td>
+				<%= contact.last_name %></td></tr>
+				<tr>
+					<td>Stats: </td>
+					<td>
+						<%= contact.email %> 
+					</td></tr>
+					<tr>
+						<td>Abilities: </td>
+						<td>
+							<%= contact.note %>
+						</td></tr>
+						<tr>
+							<td>ID#: </td>
+							<td>
+								<%= contact.id %>
+							</td></tr>
+
+
+
+							<% end %>
+						</ul>
+					</table>
+				</div>
+				<form method="get" action="/">
+					<button type="Submit">Back to index!</button>
+				</form>
+
+
+
+<!-- <form action="#" method="foo">
+<select>
+  <option value=":id"><%=:id%></option>
+</select>
+</form> -->

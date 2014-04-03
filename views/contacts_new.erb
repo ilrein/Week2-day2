@@ -1,14 +1,40 @@
-<h1>Create a new contact!</h1>
+<div class="title"> 
+	<h1>Enlist a new minion</h1>
+</div>
 
-<form action="/contacts" method="post">
-	<input type="text" name="first_name">
-	<input type="text" name="last_name">
-	<input type="text" name="email">
-	<input type="text" name="note">
-	<input type="submit" name="Submit">
+<table>
+
+	<form action="/contacts" method="post">
+
+		<tr>
+			<td><div class="min_font">Minion's class: </div></td>
+			<td>
+				<input type="text" name="first_name">
+			</td>
+		</tr>
+		<tr>
+			<td><div class="min_font">Minion's race: </div></td>
+			<td>
+				<input type="text" name="last_name">
+			</td>
+		</tr>
+		<tr>
+			<td><div class="min_font">Minion's stats: </div></td>
+			<td>
+				<input type="text" name="email">
+			</td>
+		</tr>
+		<tr>
+			<td><div class="min_font">Minion's abilities: </div></td>
+			<td>
+				<input type="text" name="note">
+			</td>
+		</tr>
+	</table>
+	<input type="submit" name="Conscript!">
 </form> 
 
-<form action ="/contacts" method ="POST">
+<!-- <form action ="/contacts" method ="POST">
 	<fieldset>
 		<legend>Contact info</legend>
 
@@ -18,4 +44,4 @@
 		</div>
 </form>
 
-<form action ="/contacts" method ="POST">
+<form action ="/contacts" method ="POST"> -->
