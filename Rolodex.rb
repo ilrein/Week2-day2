@@ -19,7 +19,14 @@ class Rolodex
       end
     end  
   end
-
+  def show_all_contacts
+    @contacts
+  end
+  def find(id)
+    @contacts.find do |x|
+      x.id == id
+    end
+  end
   def show_contacts
     @contacts.each do |contact|
       puts contact

@@ -1,7 +1,8 @@
 <h1>All Contacts</h1>
 
 <ul>
-<% @@contact_array.each do |contact| %>
-  <li><%= contact.first_name %> <%= contact.last_name %></li>
+<% @@rolodex.show_all_contacts.each do |contact| %>
+  <li><%= contact.first_name %> <%= contact.last_name %>
+  <%= contact.email %><%= contact.note %><%= contact.id %></li>
 <% end %>
 </ul>
